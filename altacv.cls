@@ -402,7 +402,7 @@
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1em,align=left]
     \def\temp{#2}\ifx\temp\empty
     \else
-      \item[\faLinkedin] \href{https://linkedin.com/in/#2}{#2}
+      \item[\faLinkedin] \href{https://linkedin.com/company/#2}{#2}
     \fi
     
     \def\temp{#3}\ifx\temp\empty
