@@ -398,7 +398,7 @@
 }
 
 % Fork v1.6.5b: Taking from original version, I added some modifications related to optional Linkedin and mail links for each reference (both will be shown only if there is any value)
-\newcommand{\cvref}[3]{%
+\newcommand{\cvref}[4]{%
   \textcolor{emphasis}{\textbf{#1}}\par
   \smallskip
   \begin{description}[font=\color{accent},style=multiline,leftmargin=1em,align=left]
@@ -409,7 +409,7 @@
     
     \def\temp{#3}\ifx\temp\empty
     \else
-      \item[\small\normalfont\mailaddresssymbol] \href{mailto:#3}{#3}
+      \item[\small\normalfont\mailaddresssymbol] \href{mailto:#3}{#4}
     \fi
   \end{description}
 }
