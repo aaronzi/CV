@@ -202,6 +202,8 @@
 \NewInfoField{npm}{\faNpm}[https://www.npmjs.com/~]
 % Docker Hub
 \NewInfoField{docker}{\faDocker}[https://hub.docker.com/u/]
+% IEEE Xplore
+\NewInfoField{ieee}{\faBook}[https://ieeexplore.ieee.org/document/]
 
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}
