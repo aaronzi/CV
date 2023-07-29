@@ -200,6 +200,8 @@
 \NewInfoField{dev}{\faDev}[https://dev.to/]
 \NewInfoField{medium}{\faMedium}[https://medium.com/@]
 \NewInfoField{npm}{\faNpm}[https://www.npmjs.com/~]
+% Docker Hub
+\NewInfoField{docker}{\faDocker}[https://hub.docker.com/u/]
 
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}
