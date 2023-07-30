@@ -189,6 +189,8 @@
 \NewInfoField{email}{\faAt}[mailto:]
 \NewInfoField{mailaddress}{\faEnvelope}
 \NewInfoField{phone}{\faPhone}[tel:]
+\NewInfoField{mobile}{\faMobile}[tel:]
+\NewInfoField{birthday}{\faBirthdayCake}
 \NewInfoField{homepage}{\faGlobe}[https://]
 \NewInfoField{twitter}{\faTwitter}[https://twitter.com/]
 \NewInfoField{linkedin}{\faLinkedin}[https://linkedin.com/in/]
@@ -196,6 +198,7 @@
 % v1.?? Use fontawesome5 for Orcid symbol
 \NewInfoField{orcid}{\faOrcid}[https://orcid.org/]
 \NewInfoField{location}{\faMapMarker}
+\NewInfoField{address}{\faMapMarker}
 % Fork (before v1.6.5a): New optional options added for dev.to, medium and npm accounts
 \NewInfoField{dev}{\faDev}[https://dev.to/]
 \NewInfoField{medium}{\faMedium}[https://medium.com/@]
