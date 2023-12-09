@@ -46,33 +46,33 @@
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
 \ifxetexorluatex
-  % If using xelatex or lualatex:
-  \setmainfont{Roboto Slab}
-  \setsansfont{Lato}
-  \renewcommand{\familydefault}{\sfdefault}
+    % If using xelatex or lualatex:
+    \setmainfont{Roboto Slab}
+    \setsansfont{Lato}
+    \renewcommand{\familydefault}{\sfdefault}
 \else
-  % If using pdflatex:
-  \usepackage[rm]{roboto}
-  \usepackage[defaultsans]{lato}
-  % \usepackage{sourcesanspro}
-  \renewcommand{\familydefault}{\sfdefault}
+    % If using pdflatex:
+    \usepackage[rm]{roboto}
+    \usepackage[defaultsans]{lato}
+    % \usepackage{sourcesanspro}
+    \renewcommand{\familydefault}{\sfdefault}
 \fi
 
 % Fork (before v1.6.5a): Change the color codes to test your personal variant on any mode
 \ifdarkmode%
-  \definecolor{PrimaryColor}{HTML}{C69749}
-  \definecolor{SecondaryColor}{HTML}{D49B54}
-  \definecolor{ThirdColor}{HTML}{1877E8}
-  \definecolor{BodyColor}{HTML}{ABABAB}
-  \definecolor{EmphasisColor}{HTML}{ABABAB}
-  \definecolor{BackgroundColor}{HTML}{191919}
+    \definecolor{PrimaryColor}{HTML}{C69749}
+    \definecolor{SecondaryColor}{HTML}{D49B54}
+    \definecolor{ThirdColor}{HTML}{1877E8}
+    \definecolor{BodyColor}{HTML}{ABABAB}
+    \definecolor{EmphasisColor}{HTML}{ABABAB}
+    \definecolor{BackgroundColor}{HTML}{191919}
 \else%
-  \definecolor{PrimaryColor}{HTML}{000000}
-  \definecolor{SecondaryColor}{HTML}{76B900}
-  \definecolor{ThirdColor}{HTML}{AFAFAF}
-  \definecolor{BodyColor}{HTML}{666666}
-  \definecolor{EmphasisColor}{HTML}{2E2E2E}
-  \definecolor{BackgroundColor}{HTML}{E2E2E2}
+    \definecolor{PrimaryColor}{HTML}{000000}
+    \definecolor{SecondaryColor}{HTML}{76B900}
+    \definecolor{ThirdColor}{HTML}{AFAFAF}
+    \definecolor{BodyColor}{HTML}{666666}
+    \definecolor{EmphasisColor}{HTML}{2E2E2E}
+    \definecolor{BackgroundColor}{HTML}{E2E2E2}
 \fi%
 
 \colorlet{name}{PrimaryColor}
@@ -101,7 +101,7 @@
 
 \begin{document}
     \name{Aaron Zielstorff}
-    \tagline{Elektrotechniker | Softwareentwickler}
+    \tagline{Elektrotechniker | Softwareingenieur}
     %% You can add multiple photos on the left or right
     \photoL{4cm}{Profil}
 
@@ -142,19 +142,19 @@
         \cvsection{TECH STACK}
             %% Fork v1.6.5c: The sloppypar* environment is used to avoid tags overlapping with section width
             \begin{sloppypar*}
-                \cvtags{C\#, Python, JavaScript, C/C++, Java, PHP, MATLAB}
+                \cvtags{JavaScript, C\#, Java, Python, PHP, C/C++, MATLAB, HTML, CSS}
                 \medskip
 
-                \cvtags{Vue.js, .NET Framework, ASP.NET, Laravel, NumPy, OpenCV}
+                \cvtags{Vue.js, .NET Framework, Maven, BaSyx, Milo, NumPy, PyTorch}
                 \medskip
 
                 \cvtags{Git, Docker, NGINX, OpenAPI, Linux, Windows, macOS}
                 \medskip
 
-                \cvtags{MySQL, MongoDB, InfluxDB, PHPMyAdmin}
+                \cvtags{MySQL, MongoDB, Firebase, PHPMyAdmin}
                 \medskip
 
-                \cvtags{Visual Studio, Shell, Visual Studio Code, IntelliJ IDEA, Eclipse}
+                \cvtags{Visual Studio, Shell, Visual Studio Code, IntelliJ IDEA, Eclipse IDE}
                 \medskip
 
                 \cvtags{HTTP/REST, MQTT, OPC UA, Modbus, CAN Open, Profinet}
@@ -167,7 +167,7 @@
                 \cvtags{MS Office, MS Outlook, MS Visio, MS Teams}
                 \medskip
 
-                \cvtags{Adobe Illustrator, \LaTeX, Blender, Adobe XD, Enterprise Architect, CoDeSys, TIA-Portal, AI-Driven Development, SE Machine Expert}
+                \cvtags{Enterprise Architect, CoDeSys, TIA-Portal, AI-Driven Development, Adobe Illustrator, \LaTeX, Asset Administration Shell, Blender, Adobe XD}
             \end{sloppypar}
         % ----- LEARNING -----
         
@@ -244,17 +244,24 @@
         
         % ----- EXPERIENCE -----
         \cvsection{Berufserfahrung}
-            \cvevent{Studentischer Mitarbeiter}{HTW Berlin}{03 2021 -- Heute}{Berlin, Deutschland}
+            \cvevent{Wissenschaftlicher Mitarbeiter}{HTW Berlin}{10 2023 -- Heute}{Berlin, Deutschland}
             \begin{itemize}
-                \item Projektorganisation und Mitarbeit in den BMBF-Förderprojekten \textit{OpenBaSys}\\ und \textit{BaSys4Transfer} zur Entwicklung von Open-Source-Software auf Grundlage der Verwaltungsschale
-                \item Teilnehmer in der Arbeitgruppe \textit{Open Technology} der Industrial Digital Twin Association (IDTA) zur Entwicklung von Standards für die Verwaltungsschale
+                \item Projektleitung an der HTW für das BMBF-Förderprojekt \textit{BaSys4Transfer} zur Entwicklung von Open-Source-Software zum Tranfer von Industrie 4.0 Technologien in die Praxis (insbesondere KMU)
+                \item Teilnahme an diversen Konferenzen und Workshops inklusive wissenschaftlicher Publikationen (Auszug siehe \textit{Publikationen})
             \end{itemize}
             \divider
-            
+
             \cvevent{Software Entwickler}{mobile only SI GmbH}{08 2017 -- Heute}{Berlin, Deutschland}
             \begin{itemize}
-                \item Frontend Webentwicklung auf Basis von Vue.js für Außendienstanwendungen
+                \item Frontend Webentwicklung auf Basis von Vue.js für die Umsetzung von Webapplikationen (u.a. Dashboards, Webshops, Außendienstlösungen)
                 \item Umsetzung von Enterprise-Applikationen in den Bereichen Customer Relationship Management (CRM), Marketing und Vertrieb
+            \end{itemize}
+            \divider
+
+            \cvevent{Studentischer Mitarbeiter}{HTW Berlin}{03 2021 -- 09 2023}{Berlin, Deutschland}
+            \begin{itemize}
+                \item Projektorganisation und Mitarbeit in den BMBF-Förderprojekten \textit{OpenBaSys}\\ und \textit{BaSys4Transfer} zur Entwicklung von Open-Source-Software auf Grundlage der Verwaltungsschale
+                \item Teilnehmer in der Arbeitgruppe \textit{Open Technology} und \textit{AAS Quality Managment} der Industrial Digital Twin Association (IDTA) zur Entwicklung von Standards für die Verwaltungsschale
             \end{itemize}
             \divider
 
@@ -267,9 +274,9 @@
         
         % ----- EDUCATION -----
         \cvsection{Ausbildung}
-            \cvevent{M.\ Eng. Elektrotechnik}{HTW Berlin}{10 2021 -- Heute}{Berlin, Deutschland}
+            \cvevent{M.\ Eng. Elektrotechnik}{HTW Berlin}{10 2021 -- 09 2023}{Berlin, Deutschland}
             \begin{itemize}
-                \item Note: Abschluss vsl. 09 2023
+                \item Note: 1,3 (mit Auszeichnung)
             \end{itemize}
             \divider
             
@@ -281,26 +288,33 @@
         
         % ----- PROJECTS -----
         \cvsection{Projekte}
-            \cvevent{BaSyx AAS Web UI }{\cvreference{\faGithub}{https://github.com/eclipse-basyx/basyx-applications/tree/main/aas-gui}\cvreference{| \faGlobe}{https://wiki.eclipse.org/BaSyx_/_Documentation_/_Components_/_AAS_Web_UI}\cvreference{| \faDocker}{https://hub.docker.com/r/eclipsebasyx/aas-gui}}{02 2022 -- Heute}{}
+            \cvevent{BaSyx AAS Web UI}{\cvreference{\faGithub}{https://github.com/eclipse-basyx/basyx-applications/tree/main/aas-gui}\cvreference{| \faGlobe}{https://wiki.eclipse.org/BaSyx_/_Documentation_/_Components_/_AAS_Web_UI}\cvreference{| \faDocker}{https://hub.docker.com/r/eclipsebasyx/aas-gui}}{02 2022 -- Heute}{}
             \begin{itemize}
-                \item Projektleitung für die offizielle Lösung der BaSys-Middleware zur Visualisierung von Verwaltungsschalen
-                \item Über 75.000 Downloads von DockerHub (Stand 07 2023) sowie Anwender aus Industrie und Forschung
+                \item Projektverantwortung für die Umsetzung der offiziellen BaSys-Middleware-Lösung zur Visualisierung von Verwaltungsschalen
+                \item Über 140.000 Downloads von DockerHub (Stand 12 2023) sowie Anwender aus Industrie und Forschung (u.a. WAGO, Fraunhofer IESE, SICK AG)
             \end{itemize}
             \divider
             
-            \cvevent{OPC2AAS }{\cvreference{\faGithub}{https://github.com/eclipse-basyx/basyx-applications/tree/main/opc2aas}\cvreference{| \faDocker}{https://hub.docker.com/r/aaronzi/opc2aas}}{05 2023 -- Heute}{}
+            \cvevent{OPC2AAS}{\cvreference{\faGithub}{https://github.com/eclipse-basyx/basyx-applications/tree/main/opc2aas}\cvreference{| \faDocker}{https://hub.docker.com/r/aaronzi/opc2aas}}{05 2023 -- Heute}{}
             \begin{itemize}
-                \item Projektleitung für die Planung Umsetzung eines Generators zur automatischen Erstellung von Verwaltungsschalen aus OPC UA Datenstrukturen
+                \item Projektverantwortung für die Planung und Umsetzung eines Generators zur automatischen Erstellung von Verwaltungsschalen aus OPC UA Datenstrukturen
                 \item Verantwortlicher für die Pflege der Lösung als BaSyx\\ Off-the-Shelf-Architekturkomponente
             \end{itemize}
         % ----- PROJECTS -----
 
         % ----- PUBLICATIONS -----
         \cvsection{Publikationen}
-            \cvevent{Industrial Controls and Asset Administration Shells:\\ An Approach to the Synchronization of Plant Segments}{\cvreference{\faBook}{https://www.scitepress.org/Link.aspx?doi=10.5220/0011527200003329}}{10 2022}{}
+            \cvevent{Overcoming Challenges in Integrating Legacy Devices with\\ Asset Administration Shells - An OPC UA Case Study}{\cvreference{\faBook}{https://ieeexplore.ieee.org/document/10275536}}{09 2023}{}
             \begin{itemize}
-                \item IN4PL 2022 - 3rd International Conference on Innovative Intelligent Industrial Production and Logistics
-                \item DOI: 10.5220/0011527200003329
+                \item ETFA 2023 - 28th IEEE International Conference on Emerging Technologies and Factory Automation
+                \item DOI: 10.1109/ETFA54631.2023.10275536
+            \end{itemize}
+            \divider
+
+            \cvevent{Component Test - Test Strategies with Asset Administration Shells}{\cvreference{\faBook}{https://ieeexplore.ieee.org/document/10228026}}{06 2023}{}
+            \begin{itemize}
+                \item ISIE 2023 - 32nd IEEE International Symposium on Industrial Electronics
+                \item DOI: 10.1109/ISIE51358.2023.10228026
             \end{itemize}
             \divider
             
@@ -308,13 +322,6 @@
             \begin{itemize}
                 \item IECON 2022 - 48th Annual Conference of the IEEE Industrial Electronics Society
                 \item DOI: 10.1109/IECON49645.2022.9968774
-            \end{itemize}
-            \divider
-            
-            \cvevent{Migration and synchronization of plant segments with\\ Asset Administration Shells}{\cvreference{\faBook}{https://ieeexplore.ieee.org/document/9921595}}{09 2022}{}
-            \begin{itemize}
-                \item ETFA 2022 - 27th IEEE International Conference on Emerging Technologies and Factory Automation
-                \item DOI: 10.1109/ETFA52439.2022.9921595
             \end{itemize}
         % ----- PUBLICATIONS -----
     \end{paracol}
